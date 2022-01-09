@@ -1,7 +1,14 @@
 .c-btn {
-    box-shadow: 1px 2px 4px 0px #00000045;
     
     &--primary {
-        background: #E1BF6D;
+        text-transform: uppercase;
+        padding: 12px 40px;
+        background: #e1bf6d;
+        box-shadow: 1px 2px 4px 0px #00000045;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-align: center;
     }
 }

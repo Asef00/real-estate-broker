@@ -1772,13 +1772,46 @@ body {
   }
 }
 
-.c-btn {
+.c-btn--primary {
+  text-transform: uppercase;
+  padding: 12px 40px;
+  background: #e1bf6d;
   -webkit-box-shadow: 1px 2px 4px 0px #00000045;
           box-shadow: 1px 2px 4px 0px #00000045;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
 }
 
-.c-btn--primary {
-  background: #E1BF6D;
+.hero-img {
+  background-image: url("../../Rectangle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-img__content {
+  text-align: center;
+  color: white;
+  padding: 5% 0 10%;
+}
+
+.hero-img__content .logo {
+  margin-bottom: 40px;
+}
+
+.hero-img__content h1 {
+  font-family: Playfair Display;
+  font-size: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-shadow: 1px 3px 5px #0000004d;
+}
+
+.hero-img__content p {
+  font-size: 18px;
 }
 
 .u-flex {

@@ -57,8 +57,9 @@
 
 
 // PARTIALS
-@import 'partials/_header.scss';
-@import 'partials/_footer.scss';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/hero';
 
 // UTILITIES
 // @import "utilities/utilities.clearfix";
