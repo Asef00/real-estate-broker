@@ -1,0 +1,26 @@
+.hero-img {
+    background-image: url("../../Rectangle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+        text-align: center;
+        color: white;
+        padding: 5% 0 10%;
+
+        .logo {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: Playfair Display;
+            font-size: 42px;
+            letter-spacing: 0em;
+            text-align: center;
+            text-shadow: 1px 3px 5px #0000004d;
+        }
+
+        p { font-size: 18px;}
+    }
+}
