@@ -23,15 +23,15 @@
 @import '../../node_modules/inuitcss/elements/elements.images';
 @import '../../node_modules/inuitcss/elements/elements.tables';
 
-@import 'elements/_var.scss';
-@import 'elements/_ie.scss';
-@import 'elements/_defaults.scss';
-@import 'elements/_misc.scss';
-@import 'elements/mixins';
+@import 'elements/var';
+@import 'elements/ie';
+@import 'elements/defaults';
+@import 'elements/misc';
 
 // OBJECTS
 //
-@import 'objects/_row.scss';
+@import 'objects/row';
+@import 'objects/section';
 // Uncomment and add to this section as necessary.
 // @import "../../node_modules/objects/objects.wrapper";
 // @import "../../node_modules/objects/objects.layout";
@@ -55,7 +55,6 @@
 @import 'components/section';
 @import 'components/button';
 @import 'components/link';
-@import 'components/product';
 @import 'components/story';
 
 

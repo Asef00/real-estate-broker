@@ -1,15 +1,15 @@
-.hero-img {
-    background-image: url("../../Rectangle.png");
+.c-section--hero {
+    background-image: url("../../images/Rectangle.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    &__content {
+    .c-hero {
         text-align: center;
         color: white;
         padding: 5% 0 10%;
 
-        .logo {
+        &__logo {
             margin-bottom: 40px;
         }
 

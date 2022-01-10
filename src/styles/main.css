@@ -1772,6 +1772,13 @@ body {
   }
 }
 
+@media (min-width: 62em) {
+  .o-section__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .c-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1780,6 +1787,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1807,52 +1817,34 @@ body {
   text-align: center;
 }
 
-.c-product-box {
-  font-family: Lato;
-  width: 350px;
-  margin: 20px;
-  -webkit-box-shadow: 0px 2px 6px 0px #00000026;
-          box-shadow: 0px 2px 6px 0px #00000026;
+.c-section--stories {
+  background-image: url(../../images/stories-bg.png);
+  padding: 80px 0 100px;
+  margin-bottom: 50px;
 }
 
-.c-product-box__content {
-  position: relative;
-}
-
-.c-product-box__price {
-  margin-bottom: 10px;
-  color: #696969;
-}
-
-.c-product-box__btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border: 1px solid #c4c4c4;
-  background-color: #fff;
-  padding: 3px 15px;
-  font-family: Lato;
-  font-size: 14px;
-  letter-spacing: 0.06em;
-}
-
-.c-story-card {
+.c-section--stories .c-story {
   max-width: 510px;
   margin: auto;
+  padding: 25px;
+  background-color: #fff;
   -webkit-box-shadow: 3px 3px 11px 0px #00000014;
           box-shadow: 3px 3px 11px 0px #00000014;
 }
 
-.c-story-card__text {
+.c-section--stories .c-story__text {
   color: #767676;
 }
 
-.c-story-card__author {
+.c-section--stories .c-story__author {
   text-align: center;
   font-weight: bold;
 }
 
-.c-story-card__icon {
+.c-section--stories .c-story__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #060606;
   position: absolute;
   padding: 10px;
@@ -1862,24 +1854,24 @@ body {
           transform: translate(50%, 50%);
 }
 
-.hero-img {
-  background-image: url("../../Rectangle.png");
+.c-section--hero {
+  background-image: url("../../images/Rectangle.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hero-img__content {
+.c-section--hero .c-hero {
   text-align: center;
   color: white;
   padding: 5% 0 10%;
 }
 
-.hero-img__content .logo {
+.c-section--hero .c-hero__logo {
   margin-bottom: 40px;
 }
 
-.hero-img__content h1 {
+.c-section--hero .c-hero h1 {
   font-family: Playfair Display;
   font-size: 35px;
   letter-spacing: 0em;
@@ -1888,12 +1880,18 @@ body {
   margin-bottom: 0;
 }
 
-.presentation {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff)), url(../../bg.png);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%), url(../../bg.png);
+.c-section--presentation {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff)), url(../../images/bg.png);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%), url(../../images/bg.png);
 }
 
-.presentation__container {
+.c-section--presentation .c-presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin-bottom: -20px;
   top: -125px;
@@ -1902,16 +1900,65 @@ body {
           box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.118);
 }
 
-.presentation__container .presentation__item {
+.c-section--presentation .c-presentation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  padding: 50px;
 }
 
-.presentation__container .presentation__item:nth-child(even) {
+.c-section--presentation .c-presentation__item:nth-child(even) {
   padding-top: 0;
   padding-bottom: 0;
   border: 1px solid #dbdbdb;
   border-top: 0;
   border-bottom: 0;
+}
+
+.c-section--listings {
+  margin-bottom: 50px;
+}
+
+.c-section--listings .c-listings__card {
+  font-family: Lato;
+  width: 350px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 2px 6px 0px #00000026;
+          box-shadow: 0px 2px 6px 0px #00000026;
+}
+
+.c-section--listings .c-listings .c-card__content {
+  position: relative;
+  padding: 15px;
+}
+
+.c-section--listings .c-listings .c-card__price {
+  margin-bottom: 10px;
+  color: #696969;
+}
+
+.c-section--listings .c-listings .c-card__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #c4c4c4;
+  background-color: #fff;
+  padding: 3px 15px;
+  margin: 15px;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: 0.06em;
 }
 
 .u-flex {

@@ -1,23 +1,32 @@
-.c-story-card {
-    max-width: 510px;
-    margin: auto;
-    box-shadow: 3px 3px 11px 0px #00000014;
+.c-section--stories {
+    background-image: url(../../images/stories-bg.png);
+    padding: 80px 0 100px;
+    margin-bottom: 50px;
 
-    &__text {
-        color: #767676;
-    }
+    .c-story {
+        max-width: 510px;
+        margin: auto;
+        padding: 25px;
+        background-color: #fff;
+        box-shadow: 3px 3px 11px 0px #00000014;
 
-    &__author {
-        text-align: center;
-        font-weight: bold;
-    }
+        &__text {
+            color: #767676;
+        }
 
-    &__icon {
-        background-color: #060606;
-        position: absolute;
-        padding: 10px;
-        right: 50%;
-        bottom: 0;
-        transform: translate(50%, 50%);
+        &__author {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        &__icon {
+            display: flex;
+            background-color: #060606;
+            position: absolute;
+            padding: 10px;
+            right: 50%;
+            bottom: 0;
+            transform: translate(50%, 50%);
+        }
     }
 }
