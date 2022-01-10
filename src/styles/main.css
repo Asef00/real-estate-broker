@@ -1836,6 +1836,32 @@ body {
   letter-spacing: 0.06em;
 }
 
+.c-story-card {
+  max-width: 510px;
+  margin: auto;
+  -webkit-box-shadow: 3px 3px 11px 0px #00000014;
+          box-shadow: 3px 3px 11px 0px #00000014;
+}
+
+.c-story-card__text {
+  color: #767676;
+}
+
+.c-story-card__author {
+  text-align: center;
+  font-weight: bold;
+}
+
+.c-story-card__icon {
+  background-color: #060606;
+  position: absolute;
+  padding: 10px;
+  right: 50%;
+  bottom: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
 .hero-img {
   background-image: url("../../Rectangle.png");
   background-position: center;
@@ -1996,5 +2022,9 @@ body {
 
 .u-padding-5 {
   padding: 3rem;
+}
+
+.u-text--center {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
