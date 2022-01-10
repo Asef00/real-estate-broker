@@ -1,0 +1,38 @@
+.c-section--footer {
+    padding: 50px 0 20px;
+    background-image: url(../../images/bg.png);
+
+    .c-footer {
+        .c-footer__form {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 60px;
+
+            .c-form__group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .c-form__control {
+                    gap: 5px;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        border: 1px solid #cecccc;
+                        padding: 2%;
+                    }
+                }
+            }
+        }
+
+        &__lower {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-top: 1px solid #dfdfdf;
+        }
+    }
+}

@@ -52,18 +52,17 @@
 //----------------------------------*\
 // Components
 //----------------------------------*/
-@import 'components/section';
 @import 'components/button';
 @import 'components/link';
 @import 'components/story';
+@import 'components/hero';
+@import 'components/presentaion';
+@import 'components/listings';
 
 
 // PARTIALS
 @import 'partials/header';
 @import 'partials/footer';
-@import 'partials/hero';
-@import 'partials/presentaion';
-@import 'partials/listings';
 
 // UTILITIES
 // @import "utilities/utilities.clearfix";

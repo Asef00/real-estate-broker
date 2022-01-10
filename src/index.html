@@ -112,11 +112,11 @@
     </section><!-- section--presentation -->
 
     <section class="o-section c-section--listings">
+      <div class="o-section__title">
+        <h2>Our featured listings in New York</h2>
+        <span class="o-section__title__hr"></span>
+      </div>
       <div class="o-section__wrapper">
-        <div class="c-title">
-          <h2>Our featured listings in New York</h2>
-          <span class="c-title__hr"></span>
-        </div>
         <div class="c-listings">
           <div class="row">
             <div class="col-md-4">
@@ -371,9 +371,9 @@
     </section><!-- section--listings -->
 
     <section class="o-section c-section--stories">
-      <div class="c-title">
+      <div class="o-section__title">
         <h2>Client Stories & Testimonials</h2>
-        <span class="c-title__hr"></span>
+        <span class="o-section__title__hr"></span>
       </div>
       <div class="o-section__wrapper">
         <div class="row">
@@ -412,29 +412,57 @@
     </section><!-- section--stories -->
 
     <section class="o-section c-section--cta">
-      <div class="c-title">
+      <div class="o-section__title">
         <h2>Your ideal home in New York</h2>
-        <span class="c-title__hr"></span>
+        <span class="o-section__title__hr"></span>
       </div>
-      <p>Receive the weekly lists of houses and their pricing, or make an appointment to have a detailed talk about your
-        desired house.</p>
-      <button class="c-btn--primary">Get in touch</button>
-      <div class="carousel"></div>
+      <div class="o-section__wrapper">
+        <div class="c-cta">
+          <p>Receive the weekly lists of houses and their pricing, or make an appointment to have a detailed talk about your
+            desired house.</p>
+          <button class="c-btn--primary">Get in touch</button>
+          <div class="carousel"></div>
+        </div>
+      </div>
     </section><!-- section--cta -->
 
     <footer class="o-section c-section--footer">
-      <div class="c-title">
+      <div class="o-section__title">
         <h2>Let’s get started</h2>
-        <span class="c-title__hr"></span>
+        <span class="o-section__title__hr"></span>
       </div>
-      <form action="">
-
-      </form>
-      <div class="footer__lower">
-        <span>All rights reserved for Proxima Agents © 2018.</span>
-        <svg width="13" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6.5 17V1m0 0L1 6.424M6.5 1 12 6.424" stroke="#2B2A2A" />
-        </svg>
+      <div class="o-section__wrapper">
+        <div class="c-footer">
+          <div class="c-footer__upper">
+            <form class="c-footer__form" action="">
+              <div class="c-form__group u-gap-4">
+                <div class="c-form__control">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name">
+                </div>
+                <div class="c-form__control">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email">
+                </div>
+                <div class="c-form__control">
+                  <label for="number">Phone Number (optional)</label>
+                  <input type="text" name="number" id="number">
+                </div>
+              </div>
+              <div class="c-form__group u-gap-2">
+                <input type="checkbox" name="call" id="call">
+                <label for="call">Please call me to make an appointment</label>
+              </div>
+              <button type="submit" class="c-btn--primary u-margin-auto">Send</button>
+            </form>
+          </div>
+          <div class="c-footer__lower">
+            <span>All rights reserved for Proxima Agents © 2018.</span>
+            <svg width="13" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 17V1m0 0L1 6.424M6.5 1 12 6.424" stroke="#2B2A2A" />
+            </svg>
+          </div>
+        </div>
       </div>
     </footer><!-- section--footer -->
   </div>

@@ -1779,7 +1779,7 @@ body {
   }
 }
 
-.c-title {
+.o-section__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1798,7 +1798,11 @@ body {
   margin-bottom: 50px;
 }
 
-.c-title__hr {
+.o-section__title h2 {
+  font-weight: 100;
+}
+
+.o-section__title__hr {
   width: 80px;
   display: inline-block;
   border-top: 2px solid #e4e4e4;
@@ -1814,7 +1818,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  text-align: center;
+  border: 0;
 }
 
 .c-section--stories {
@@ -1961,6 +1965,65 @@ body {
   letter-spacing: 0.06em;
 }
 
+.c-section--footer {
+  padding: 50px 0 20px;
+  background-image: url(../../images/bg.png);
+}
+
+.c-section--footer .c-footer .c-footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.c-section--footer .c-footer .c-footer__form .c-form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-section--footer .c-footer .c-footer__form .c-form__group .c-form__control {
+  gap: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-section--footer .c-footer .c-footer__form .c-form__group .c-form__control input {
+  border: 1px solid #cecccc;
+  padding: 2%;
+}
+
+.c-section--footer .c-footer__lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #dfdfdf;
+}
+
 .u-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2045,6 +2108,10 @@ body {
 
 .u-margin-5 {
   margin: 3rem;
+}
+
+.u-margin-auto {
+  margin: auto;
 }
 
 .u-padding-0 {
