@@ -60,10 +60,12 @@
 @import 'partials/header';
 @import 'partials/footer';
 @import 'partials/hero';
+@import 'partials/presentaion';
 
 // UTILITIES
 // @import "utilities/utilities.clearfix";
-@import 'utilities/_flex.scss';
+@import 'utilities/flex';
+@import 'utilities/spacing';
 
 // Be aware that enabling offsets produces a large chunk of classes which might
 // bloat your CSS, depending of the amount of breakpoints you defined.
