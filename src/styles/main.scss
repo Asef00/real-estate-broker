@@ -27,6 +27,7 @@
 @import 'elements/_ie.scss';
 @import 'elements/_defaults.scss';
 @import 'elements/_misc.scss';
+@import 'elements/mixins';
 
 // OBJECTS
 //
@@ -51,9 +52,10 @@
 //----------------------------------*\
 // Components
 //----------------------------------*/
-@import 'components/_section.scss';
-@import 'components/_button.scss';
-@import 'components/_link.scss';
+@import 'components/section';
+@import 'components/button';
+@import 'components/link';
+@import 'components/product';
 
 
 // PARTIALS
@@ -61,6 +63,7 @@
 @import 'partials/footer';
 @import 'partials/hero';
 @import 'partials/presentaion';
+@import 'partials/listings';
 
 // UTILITIES
 // @import "utilities/utilities.clearfix";
