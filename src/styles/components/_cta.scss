@@ -9,16 +9,19 @@
         }
 
         &__carousel {
-            margin: 50px auto 80px;
+            margin: 50px 50px 80px;
 
             .carousel-cell {
                 width: 33%;
             }
-            .flickity-prev-next-button.previous {
-                left: -50px;
-            }
-            .flickity-prev-next-button.next {
-                right: -50px;
+            .flickity-prev-next-button {
+                background: #F6F6F6;
+                &.previous {
+                    left: -45px;
+                }
+                &.next {
+                    right: -45px;
+                }
             }
         }
     }

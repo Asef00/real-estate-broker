@@ -628,6 +628,14 @@ body {
   background-color: #fff;
 }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width: 62em) {
   .container {
     max-width: 1200px;
@@ -1980,19 +1988,23 @@ body {
 }
 
 .c-section--cta .c-cta__carousel {
-  margin: 50px auto 80px;
+  margin: 50px 50px 80px;
 }
 
 .c-section--cta .c-cta__carousel .carousel-cell {
   width: 33%;
 }
 
+.c-section--cta .c-cta__carousel .flickity-prev-next-button {
+  background: #F6F6F6;
+}
+
 .c-section--cta .c-cta__carousel .flickity-prev-next-button.previous {
-  left: -50px;
+  left: -45px;
 }
 
 .c-section--cta .c-cta__carousel .flickity-prev-next-button.next {
-  right: -50px;
+  right: -45px;
 }
 
 /**
