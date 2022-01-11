@@ -47,6 +47,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- build:css styles/vendor.min.css -->
+  <link rel="stylesheet" href="/node_modules/flickity/dist/flickity.min.css">
   <!-- endbuild -->
 
   <!-- build:css styles/main.min.css -->
@@ -418,10 +419,34 @@
       </div>
       <div class="o-section__wrapper">
         <div class="c-cta">
-          <p>Receive the weekly lists of houses and their pricing, or make an appointment to have a detailed talk about your
-            desired house.</p>
+          <p class="c-cta__desc">
+            Receive the weekly lists of houses and their pricing, or make an appointment to have a detailed talk about
+            your
+            desired house.
+          </p>
           <button class="c-btn--primary">Get in touch</button>
-          <div class="carousel"></div>
+          <div class="c-cta__carousel">
+            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+              <div class="carousel-cell">
+                <img src="images/image.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                <img src="images/image (1).png" alt="">
+              </div>
+              <div class="carousel-cell">
+                <img src="images/image (2).png" alt="">
+              </div>
+              <div class="carousel-cell">
+                <img src="images/image.png" alt="">
+              </div>
+              <div class="carousel-cell">
+                <img src="images/image (1).png" alt="">
+              </div>
+              <div class="carousel-cell">
+                <img src="images/image (2).png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section><!-- section--cta -->
@@ -469,6 +494,7 @@
 
 
   <!-- build:js scripts/vendor.min.js -->
+  <script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
   <!-- endbuild -->
 
   <!-- build:js scripts/main.min.js -->

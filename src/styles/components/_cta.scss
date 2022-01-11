@@ -1,0 +1,25 @@
+.c-section--cta {
+    margin-bottom: 50px;
+    .c-cta {
+        text-align: center;
+        &__desc {
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__carousel {
+            margin: 50px auto 80px;
+
+            .carousel-cell {
+                width: 33%;
+            }
+            .flickity-prev-next-button.previous {
+                left: -50px;
+            }
+            .flickity-prev-next-button.next {
+                right: -50px;
+            }
+        }
+    }
+}
