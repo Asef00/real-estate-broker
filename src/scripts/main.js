@@ -24,6 +24,12 @@
       }
     });
 
+    var flickOptions = {
+      wrapAround: true,
+      autoPlay: true
+    }
+
+    new Flickity('.c-cta__carousel', flickOptions);
   });
 })();
 

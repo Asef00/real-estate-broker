@@ -1,12 +1,14 @@
 .c-section--presentation {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%), url(../../images/bg.png);
+    background: linear-gradient(180deg, #fff0 70%, #fff 100%), url(../../images/bg1.png);
+    padding-bottom: 30px;
 
     .c-presentation {
         display: flex;
         align-items: center;
         position: relative;
-        margin-bottom: -20px;
-        top: -125px;
+        @include mq(desktop) {
+            top: -125px;
+        }
         background: #f6f6f6;
         box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.118);
 
@@ -18,13 +20,23 @@
             text-align: center;
             padding: 5% 3%;
 
-            &:nth-child(even) {
-                padding-top: 0;
-                padding-bottom: 0;
-                border: 1px solid #dbdbdb;
-                border-top: 0;
-                border-bottom: 0;
+            @include mq(desktop) {
+                &:nth-child(even) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    border: 1px solid #dbdbdb;
+                    border-top: 0;
+                    border-bottom: 0;
+                }
             }
+        }
+
+        &__icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
