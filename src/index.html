@@ -453,7 +453,7 @@
 
     <footer class="o-section c-section--footer">
       <div class="o-section__title">
-        <h2>Let’s get started</h2>
+        <h2>Let's get started</h2>
         <span class="o-section__title__hr"></span>
       </div>
       <div class="o-section__wrapper">
@@ -463,11 +463,11 @@
               <div class="c-form__group u-gap-4">
                 <div class="c-form__control">
                   <label for="name">Name</label>
-                  <input type="text" name="name" id="name">
+                  <input type="text" name="name" id="name" required>
                 </div>
                 <div class="c-form__control">
                   <label for="email">Email</label>
-                  <input type="text" name="email" id="email">
+                  <input type="text" name="email" id="email" required>
                 </div>
                 <div class="c-form__control">
                   <label for="number">Phone Number (optional)</label>
@@ -492,9 +492,26 @@
     </footer><!-- section--footer -->
   </div>
 
+  <!-- <div class="dialog-container c-modal" id="success-modal" data-a11y-dialog aria-labelledby="Title--success" aria-hidden="true"
+    aria-describedby="my-dialog-description">
+    <div class="dialog-overlay" data-a11y-dialog-hide></div>
+    <div class="dialog-content" role="document">
+      <button type="button" class="dialog-close" data-a11y-dialog-hide aria-label="Close dialog">
+        &times;
+      </button>
+      <h2 id="Title--success">Thank You</h2>
+
+      <p id="my-dialog-description">
+        Fill in the ridiculously small form below to receive our ridiculously
+        cool newsletter!
+      </p>
+    </div>
+  </div> -->
+  <div class="dialog-container" aria-hidden="true" id="your-dialog-id">…</div>
 
   <!-- build:js scripts/vendor.min.js -->
   <script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+  <script src="/node_modules/a11y-dialog/a11y-dialog.min.js"></script>
   <!-- endbuild -->
 
   <!-- build:js scripts/main.min.js -->
