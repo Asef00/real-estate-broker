@@ -1919,7 +1919,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: 5% 3%;
 }
 
 .c-section--presentation .c-presentation__item:nth-child(even) {
@@ -1996,11 +1996,38 @@ body {
 }
 
 /**
- * 1. Make the dialog container, and its child overlay spread across
- *    the entire window.
- */
-.dialog-container,
-.dialog-overlay {
+  * 1. Make sure the dialog container and all its descendants sits on
+  *    top of the rest of the page.
+  * 2. Make the dialog container a flex container to easily center the
+  *    dialog.
+  */
+.c-modal {
+  z-index: 2;
+  /* 1 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 2 */
+  text-align: center;
+  /**
+    * 1. Make the dialog container, and its child overlay spread across
+    *    the entire window.
+    */
+  /**
+    * 1. Make sure the dialog container and all its descendants are not
+    *    visible and not focusable when it is hidden.
+    */
+  /**
+      * 1. Make the overlay look like an overlay.
+      */
+  /**
+      * 1. Vertically and horizontally center the dialog in the page.
+      * 2. Make sure the dialog sits on top of the overlay.
+      * 3. Make sure the dialog has an opaque background.
+      */
+}
+
+.c-modal, .c-modal__overlay {
   position: fixed;
   /* 1 */
   top: 0;
@@ -2013,52 +2040,31 @@ body {
   /* 1 */
 }
 
-/**
-  * 1. Make sure the dialog container and all its descendants sits on
-  *    top of the rest of the page.
-  * 2. Make the dialog container a flex container to easily center the
-  *    dialog.
-  */
-.dialog-container {
-  z-index: 2;
-  /* 1 */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* 2 */
-}
-
-/**
-  * 1. Make sure the dialog container and all its descendants are not
-  *    visible and not focusable when it is hidden.
-  */
-.dialog-container[aria-hidden='true'] {
+.c-modal[aria-hidden="true"] {
   display: none;
   /* 1 */
 }
 
-/**
-  * 1. Make the overlay look like an overlay.
-  */
-.dialog-overlay {
+.c-modal__overlay {
   background-color: rgba(43, 46, 56, 0.9);
   /* 1 */
 }
 
-/**
-  * 1. Vertically and horizontally center the dialog in the page.
-  * 2. Make sure the dialog sits on top of the overlay.
-  * 3. Make sure the dialog has an opaque background.
-  */
-.dialog-content {
+.c-modal__content {
   margin: auto;
   /* 1 */
+  padding: 30px;
+  width: 350px;
   z-index: 2;
   /* 2 */
   position: relative;
   /* 2 */
   background-color: white;
   /* 3 */
+}
+
+.c-modal__title {
+  margin-bottom: 0;
 }
 
 .c-section--footer {
@@ -2232,6 +2238,10 @@ body {
 
 .u-padding-5 {
   padding: 3rem;
+}
+
+.u-w--100 {
+  width: 100%;
 }
 
 .u-text--center {
