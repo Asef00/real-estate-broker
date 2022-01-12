@@ -3,9 +3,12 @@
     padding-bottom: 30px;
 
     .c-presentation {
-        display: flex;
         align-items: center;
         position: relative;
+        padding: 40px 20px;
+        @include mq(tablet) {
+            padding: 0;
+        }
         @include mq(desktop) {
             top: -125px;
         }
@@ -13,13 +16,18 @@
         box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.118);
 
         &__item {
+            gap: 20px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 5% 3%;
-
+            padding: 3%;
+            
+            @include mq(tablet) {
+                padding: 5% 3%;
+                gap: 10px;
+                text-align: center;
+                flex-direction: column;
+            }
             @include mq(desktop) {
                 &:nth-child(even) {
                     padding-top: 0;

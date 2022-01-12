@@ -6,14 +6,20 @@
             max-width: 450px;
             margin-left: auto;
             margin-right: auto;
+            padding: 0 15px;
         }
 
         &__carousel {
-            margin: 50px 50px 80px;
+            margin: 50px 0 80px;
+            @include mq(tablet) {
+                margin: 50px 50px 80px;
+            }
 
             .carousel-cell {
-                width: 50%;
-                @include mq(desktop) {
+                width: 100%;
+                @include mq(tablet) {
+                    width: 50%;
+                }@include mq(desktop) {
                     width: 33%;
                 }
             }
