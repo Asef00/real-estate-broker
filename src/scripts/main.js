@@ -38,14 +38,18 @@
     }
 
     new Flickity('.c-cta__carousel', flickOptions);
+    new Flickity('.c-listing__carousel', {
+      watchCSS: true,
+      prevNextButtons: false
+    });
 
-    if (matchMedia('screen and (max-width: 576px)').matches) {
-      var carousel = document.querySelector('.c-listings .c-listings__carousel');
-      carousel.classList.remove('row');
-      new Flickity(carousel, {
-        prevNextButtons: false
-      });
-    }
+    // if (matchMedia('screen and (max-width: 576px)').matches) {
+    //   var carousel = document.querySelector('.c-listings .c-listings__carousel');
+    //   carousel.classList.remove('row');
+    //   new Flickity(carousel, {
+    //     prevNextButtons: false
+    //   });
+    // }
   });
 })();
 

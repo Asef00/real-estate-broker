@@ -3,28 +3,49 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
-    .c-hero {
-        text-align: center;
-        color: white;
-        padding: 5% 0 20%;
+.c-hero {
+    text-align: center;
+    color: white;
+    padding: 0 0 6.62em;
+}
 
-        &__logo {
-            margin: 70px 0;
-            @include mq(tablet) {
-                margin: 0 0 40px;
-            }
-        }
+.c-hero__logo {
+    padding: 4.98em 0 5.54em;
+    @include mq(tablet) {
+        padding: 6.37em 0 4.93em;
+    }
+    @include mq(desktop) {
+        padding: 7.5em 0 5.5em;
+    }
+}
 
-        h1 {
-            font-family: Playfair Display;
-            font-size: 35px;
-            letter-spacing: 0em;
-            text-align: center;
-            text-shadow: 1px 3px 5px #0000004d;
-            max-width: 500px;
-            margin: auto;
-            margin-bottom: 0;
-        }
+.c-hero__title {
+    font-family: $playfair;
+    @include font-size(32px, 36px);
+    text-align: center;
+    text-shadow: 1px 3px 5px #0000004d;
+    max-width: 31.25em;
+    margin: 0 auto 1.5em;
+    @include mq(tablet) {
+        @include font-size(36px, 45px);
+        margin-bottom: 1.68em;
+    }
+    @include mq(desktop) {
+        @include font-size(48px, 54px);
+        margin-bottom: 1em;
+    }
+}
+
+.c-hero__desc {
+    font-family: $lato;
+    @include font-size(20px, 28px);
+    margin: 0 0 5.5em;
+    @include mq(tablet) {
+        @include font-size(20px, 23px);
+    }
+    @include mq(desktop) {
+        @include font-size(22px, 25px);
     }
 }

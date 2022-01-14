@@ -1,14 +1,19 @@
 .c-btn {
-    
-    &--primary {
-        text-transform: uppercase;
-        padding: 12px 40px;
-        background: #e1bf6d;
-        box-shadow: 1px 2px 4px 0px #00000045;
-        font-family: Lato;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        border: 0;
+    text-transform: uppercase;
+    padding: 12px 40px;
+    background: #e1bf6d;
+    box-shadow: 1px 2px 4px 0px #00000045;
+    font-family: $lato;
+    @include font-size(15px, 18px);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+        box-shadow: 0px 10px 15px #00000045;
+        transition: .2s;
+        transform: translateY(-.1em);
     }
 }

@@ -1,44 +1,68 @@
 .c-section--cta {
     margin-bottom: 50px;
-    .c-cta {
-        text-align: center;
-        &__desc {
-            max-width: 450px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 15px;
-        }
+}
 
-        &__carousel {
-            margin: 50px 0 80px;
-            @include mq(tablet) {
-                margin: 50px 50px 80px;
-            }
+.c-cta {
+    text-align: center;
+}
 
-            .carousel-cell {
-                width: 100%;
-                @include mq(tablet) {
-                    width: 50%;
-                }@include mq(desktop) {
-                    width: 33%;
-                }
-            }
+.c-cta__desc {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
 
-            .flickity-prev-next-button {
-                display: none;
-                background: #F6F6F6;
-
-                @include mq(desktop) {
-                    display: block;
-                }
-
-                &.previous {
-                    left: -45px;
-                }
-                &.next {
-                    right: -45px;
-                }
-            }
-        }
+.c-cta__carousel {
+    margin: 50px 0 80px;
+    @include mq(tablet) {
+        margin: 50px 50px 80px;
     }
+}
+
+.c-cta__carousel .carousel-cell {
+    width: 100%;
+    @include mq(tablet) {
+        width: 50%;
+    }
+    @include mq(desktop) {
+        width: 33%;
+    }
+}
+
+.c-cta__carousel .carousel-cell img {
+    width: 100%;
+}
+
+.c-cta__carousel .flickity-prev-next-button {
+    display: none;
+    background: #f6f6f6;
+
+    @include mq(desktop) {
+        display: block;
+    }
+
+    &.previous {
+        left: -45px;
+    }
+    &.next {
+        right: -45px;
+    }
+}
+
+.c-cta__carousel .flickity-page-dots .dot {
+    background: #dfdddd;
+    opacity: 1;
+    margin: 0 .43em;
+
+    @include mq(tablet) {
+        width: 8.28px;
+        height: 8.28px;
+        margin: 0 .4em;
+    }
+}
+
+.c-cta__carousel .flickity-page-dots .dot.is-selected {
+    background: #070707;
+    opacity: 0.5;
 }

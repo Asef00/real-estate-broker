@@ -1,27 +1,8 @@
-.o-section {
-    &__wrapper {
-        @include mq(lg) {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-    }
-
-    &__title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: Playfair Display;
-        margin-bottom: 2%;
-        
-        h2 {
-            font-weight: 100;
-        }
-        &__hr {
-            width: 80px;
-            display: inline-block;
-            border-top: 2px solid #e4e4e4;
-        }
+.o-section__wrapper {
+    padding: 0 1em;
+    max-width: 75.5em;
+    margin: 0 auto;
+    @include mq(lg) {
+        padding: 0;
     }
 }

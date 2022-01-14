@@ -1,0 +1,14 @@
+.c-section__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Playfair Display;
+    margin-bottom: 2%;
+}
+.c-section__title--hr {
+    width: 4.87em;
+    display: inline-block;
+    border-top: 2px solid #e4e4e4;
+}
