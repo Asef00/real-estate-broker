@@ -1975,7 +1975,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 40px 20px;
   background: #f6f6f6;
   -webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.118);
           box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.118);
@@ -1998,18 +1997,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3%;
+  padding: 1.87em;
 }
 
 @media (min-width: 46.25em) {
   .c-presentation .c-presentation__item {
-    padding: 5% 3%;
+    padding: 3.62em 2.12em;
     gap: 10px;
     text-align: center;
     -webkit-box-orient: vertical;
@@ -2020,6 +2016,9 @@ body {
 }
 
 @media (min-width: 61.25em) {
+  .c-presentation .c-presentation__item {
+    padding: 3.87em 4.93em;
+  }
   .c-presentation .c-presentation__item:nth-child(even) {
     padding-top: 0;
     padding-bottom: 0;
@@ -2189,17 +2188,25 @@ body {
   right: -45px;
 }
 
+.c-cta__carousel .flickity-prev-next-button svg {
+  opacity: .5;
+}
+
+.c-cta__carousel .flickity-prev-next-button svg:hover {
+  opacity: 1;
+}
+
 .c-cta__carousel .flickity-page-dots .dot {
   background: #dfdddd;
   opacity: 1;
-  margin: 0 .43em;
+  margin: 0 0.43em;
 }
 
 @media (min-width: 46.25em) {
   .c-cta__carousel .flickity-page-dots .dot {
     width: 8.28px;
     height: 8.28px;
-    margin: 0 .4em;
+    margin: 0 0.4em;
   }
 }
 

@@ -6,7 +6,6 @@
 .c-presentation {
     align-items: center;
     position: relative;
-    padding: 40px 20px;
     @include mq(tablet) {
         padding: 0;
     }
@@ -20,17 +19,17 @@
 .c-presentation .c-presentation__item {
     gap: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 3%;
+    padding: 1.87em;
 
     @include mq(tablet) {
-        padding: 5% 3%;
+        padding: 3.62em 2.12em;
         gap: 10px;
         text-align: center;
         flex-direction: column;
     }
     @include mq(desktop) {
+        padding: 3.87em 4.93em;
         &:nth-child(even) {
             padding-top: 0;
             padding-bottom: 0;
