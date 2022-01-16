@@ -1,5 +1,5 @@
 .c-section--cta {
-    margin-bottom: 50px;
+    margin-bottom: 7em;
 }
 
 .c-cta {
@@ -8,9 +8,9 @@
 
 .c-cta__desc {
     max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
+    margin: 0 auto 2.22em;
+    color: #767676;
+    @include font-size(18px,26px);
 }
 
 .c-cta__carousel {

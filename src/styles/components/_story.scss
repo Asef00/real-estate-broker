@@ -1,7 +1,7 @@
 .c-section--stories {
     background: center no-repeat url(../../images/stories-bg.png);
     background-size: cover;
-    padding: 8% 0 10%;
+    padding: 0 0 6.31em;
     margin-bottom: 50px;
 
     .row {
@@ -12,22 +12,31 @@
 .c-story {
     max-width: 510px;
     margin: auto;
-    padding: 25px;
+    padding: 2em;
     background-color: #fff;
     box-shadow: 3px 3px 11px 0px #00000014;
 }
 
 .c-story__text {
     color: #767676;
+    font-style: italic;
+    @include font-size(18px,29px);
 }
 
 .c-story__author {
+    margin-top: 2.28em;
     text-align: center;
+    text-transform: uppercase;
     font-weight: bold;
+    @include font-size(14px,14px);
 }
 
 .c-story__icon {
+    width: 3.14em;
+    height: 3.14em;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #060606;
     position: absolute;
     padding: 10px;

@@ -1,13 +1,14 @@
 .c-section--footer {
     padding: 50px 0 20px;
     background-image: url(../../images/bg.png);
+    background-position: bottom;
 }
 
-.c-footer .c-footer__form {
+.c-footer__form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-bottom: 60px;
+    gap: 3em;
+    margin-bottom: 5em;
     max-width: 500px;
     @include mq(desktop) {
         max-width: none;
@@ -15,32 +16,41 @@
 
     .row {
         gap: 20px 0;
-        .c-form__control {
-            gap: 5px;
-            display: flex;
-            flex-direction: column;
-
-            input {
-                border: 1px solid #cecccc;
-                padding: 2%;
-            }
-        }
     }
 }
 
+.c-form__control {
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        border: 1px solid #cecccc;
+        padding: 0.6em;
+    }
+}
+
+.c-footer__form--label {
+    @include font-size(16px, 18px);
+}
+
 .c-footer__lower {
-    gap: 30px 0;
+    gap: 2.66em 0;
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    padding: 20px;
+    padding: 4.66em 0;
     border-top: 1px solid #dfdfdf;
+    color: #757575;
+
+    @include font-size(12px, 14px);
     @include mq(tablet) {
         flex-direction: row;
     }
 }
-.c-footer__lower .c-scroll-up {
+
+.c-scroll-up {
     cursor: pointer;
     border-radius: 100%;
     width: 25px;
@@ -50,7 +60,7 @@
     justify-content: center;
 
     &:hover {
-        transition: .2s;
+        transition: 0.2s;
         background-color: #ddd;
     }
 }

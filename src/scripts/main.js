@@ -43,29 +43,5 @@
       watchCSS: true,
       prevNextButtons: false
     });
-
-    // if (matchMedia('screen and (max-width: 576px)').matches) {
-    //   var carousel = document.querySelector('.c-listings .c-listings__carousel');
-    //   carousel.classList.remove('row');
-    //   new Flickity(carousel, {
-    //     prevNextButtons: false
-    //   });
-    // }
   });
 })();
-
-function getSvg(shape) {
-  return 'M ' + shape.x0 + ',50' +
-    ' L ' + shape.x1 + ',' + (shape.y1 + 50) +
-    ' L ' + shape.x2 + ',' + (shape.y2 + 50) +
-    ' L ' + shape.x3 + ',' + (shape.y3 + 50) +
-    ' L ' + shape.x4 + ',' + (shape.y4 + 50) +
-    ' L ' + shape.x5 + ',' + (shape.y5 + 50) +
-    ' L ' + shape.x6 + ',' + (shape.y6 + 50) +
-
-
-
-    ' L ' + shape.x2 + ',' + (50 - shape.y2) +
-    ' L ' + shape.x1 + ',' + (50 - shape.y1) +
-    ' Z';
-}
