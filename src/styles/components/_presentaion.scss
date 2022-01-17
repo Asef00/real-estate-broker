@@ -3,11 +3,10 @@
 }
 
 .c-presentation {
-    align-items: center;
     position: relative;
     padding: 3.75em 0;
     @include mq(tablet) {
-        padding: 0;
+        padding: 0 1.5em;
     }
     @include mq(desktop) {
         top: -125px;
@@ -16,7 +15,7 @@
     box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.118);
 }
 
-.c-presentation .c-presentation__item {
+.c-presentation__item {
     gap: 2.43em;
     display: flex;
     align-items: center;
@@ -24,8 +23,7 @@
     @include font-size(16px, 22px);
 
     @include mq(tablet) {
-        padding: 3.62em 2.12em;
-        // gap: 0.625em;
+        padding: 4.02em .58em 3.45em;
         text-align: center;
         flex-direction: column;
         @include font-size(17px, 24px);
@@ -43,18 +41,18 @@
 }
 
 .c-presentation__desc {
-    margin: auto;
+    margin: 0;
     width: fit-content;
     color: #696969;
 }
 
-.c-presentation .c-presentation__icon {
+.c-presentation__icon {
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.c-presentation .c-presentation__icon img{
+.c-presentation__icon img{
     height: 2.25em;
 }

@@ -1,11 +1,13 @@
 .c-section--stories {
     background: center no-repeat url(../../images/stories-bg.png);
     background-size: cover;
-    padding: 0 0 6.31em;
-    margin-bottom: 50px;
+    padding-bottom: 6.31em;
+    @include mq(tablet) {
+        padding-bottom: 7.37em;
+    }
 
     .row {
-        gap: 50px 0;
+        gap: 4.37em 0;
     }
 }
 

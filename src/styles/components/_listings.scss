@@ -65,6 +65,9 @@
     align-items: center;
     gap: 0 0.51em;
 }
+.c-card__option--qty {
+    @include font-size(14px,16.8px);
+}
 
 .c-card__btn {
     text-transform: uppercase;
