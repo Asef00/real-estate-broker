@@ -5,10 +5,10 @@
     @include mq(tablet) {
         padding-bottom: 7.37em;
     }
+}
 
-    .row {
-        gap: 4.37em 0;
-    }
+.c-stories {
+    gap: 4.37em 0;
 }
 
 .c-story {
@@ -22,7 +22,7 @@
 .c-story__text {
     color: #767676;
     font-style: italic;
-    @include font-size(18px,29px);
+    @include font-size(18px, 29px);
 }
 
 .c-story__author {
@@ -30,7 +30,7 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    @include font-size(14px,14px);
+    @include font-size(14px, 14px);
 }
 
 .c-story__icon {
