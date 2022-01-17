@@ -1,5 +1,12 @@
 .c-section--cta {
     margin-bottom: 7em;
+
+    .o-section__wrapper {
+        @include mq($until: lg) {
+            width: 100%;
+            max-width: unset;
+        }
+    }
 }
 
 .c-cta {
@@ -10,7 +17,7 @@
     max-width: 32.11em;
     margin: 0 auto 2.22em;
     color: #767676;
-    @include font-size(18px,26px);
+    @include font-size(18px, 26px);
 }
 
 .c-cta__carousel {

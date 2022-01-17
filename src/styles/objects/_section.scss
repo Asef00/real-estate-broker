@@ -8,10 +8,3 @@
         padding: 0;
     }
 }
-
-.o-section__wrapper--full {
-    @include mq($until: lg) {
-        width: 100%;
-        max-width: unset;
-    }
-}

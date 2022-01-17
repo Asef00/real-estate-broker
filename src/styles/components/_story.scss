@@ -1,19 +1,16 @@
-.c-section--stories {
+.c-section--story {
     background: center no-repeat url(../../images/stories-bg.png);
     background-size: cover;
-    padding-bottom: 6.31em;
+    padding-bottom: 1.25em;
     @include mq(tablet) {
-        padding-bottom: 7.37em;
+        padding-bottom: 3.875em;
     }
 }
 
-.c-stories {
-    gap: 4.37em 0;
-}
-
-.c-story {
+.c-story__item {
     max-width: 36.18em;
     margin: auto;
+    margin-bottom: 1.37em;
     padding: 2em;
     background-color: #fff;
     box-shadow: 3px 3px 11px 0px #00000014;

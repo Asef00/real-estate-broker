@@ -2,7 +2,7 @@
     background-image: url(../../images/bg.png);
     background-position: bottom;
 
-    .c-section__title--h {
+    .c-section-title__h {
         margin-top: 3.43em;
     }
 }
@@ -34,8 +34,11 @@
     }
 }
 
-.c-footer__form--label {
+.c-footer-form__label {
     @include font-size(16px, 18px);
+}
+.c-footer-form__call {
+    text-align: center;
 }
 
 .c-footer__lower {

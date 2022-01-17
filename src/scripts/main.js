@@ -39,10 +39,18 @@
       autoPlay: true
     }
 
-    new Flickity('.c-cta__carousel', flickOptions);
     new Flickity('.c-listing__carousel', {
       watchCSS: true,
       prevNextButtons: false
     });
+    new Flickity('.c-story__carousel', {
+      prevNextButtons: false,
+      wrapAround: true,
+      groupCells: true,
+      pageDots: false,
+      // setGallerySize: false,
+      autoPlay: true
+    });
+    new Flickity('.c-cta__carousel', flickOptions);
   });
 })();

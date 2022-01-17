@@ -1,6 +1,15 @@
 .c-section--presentation {
-    margin-bottom: -140px;
     background: linear-gradient(180deg, #fff0 70%, #fff 100%), url(../../images/bg1.png);
+    @include mq(desktop) {
+        margin-bottom: -140px;
+    }
+
+    .o-section__wrapper {
+        @include mq($until: lg) {
+            width: 100%;
+            max-width: unset;
+        }
+    }
 }
 
 .c-presentation {
@@ -25,7 +34,7 @@
     @include font-size(16px, 22px);
 
     @include mq(tablet) {
-        padding: 4.02em .58em 3.45em;
+        padding: 4.02em 0.58em 3.45em;
         text-align: center;
         flex-direction: column;
         @include font-size(17px, 24px);
@@ -55,9 +64,8 @@
     justify-content: center;
     height: 2.25em;
     @include mq(tablet) {
-    
         width: 2.25em;
     }
 }
-.c-presentation__icon img{
+.c-presentation__icon img {
 }

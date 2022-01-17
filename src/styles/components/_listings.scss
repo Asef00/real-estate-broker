@@ -1,7 +1,7 @@
 .c-section--listing {
     margin-bottom: 7em;
 
-    .c-section__title--hr {
+    .c-section-title__hr {
         display: none;
         @include mq(tablet) {
             display: block;
@@ -65,7 +65,7 @@
     align-items: center;
     gap: 0 0.51em;
 }
-.c-card__option--qty {
+.c-card-option__qty {
     @include font-size(14px,16.8px);
 }
 
