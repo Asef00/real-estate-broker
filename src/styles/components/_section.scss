@@ -15,6 +15,10 @@
         @include font-size(28px,35px);
         margin-top: 3.42em;
     }
+    @include mq(desktop) {
+        @include font-size(32px,43px);
+        margin-top: 3.75em;
+    }
 }
 .c-section__title--hr {
     width: 4.87em;

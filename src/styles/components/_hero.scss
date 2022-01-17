@@ -14,6 +14,8 @@
     }
     @include mq(desktop) {
         padding-bottom: 17.5em;
+        max-width: 46.87em;
+        margin: auto;
     }
 }
 
@@ -51,5 +53,6 @@
     }
     @include mq(desktop) {
         @include font-size(22px, 25px);
+        margin-bottom: 2.9em;
     }
 }

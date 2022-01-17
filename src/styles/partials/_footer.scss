@@ -1,6 +1,10 @@
 .c-section--footer {
     background-image: url(../../images/bg.png);
     background-position: bottom;
+
+    .c-section__title--h {
+        margin-top: 3.43em;
+    }
 }
 
 .c-footer__form {
@@ -46,8 +50,12 @@
 
     @include font-size(12px, 14px);
     @include mq(tablet) {
+        padding: 2.85em 0 4.14em;
         flex-direction: row;
         @include font-size(14px, 16.8px);
+    }
+    @include mq(desktop) {
+        padding-bottom: 4.85em;
     }
 }
 

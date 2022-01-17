@@ -1,4 +1,5 @@
 .c-section--presentation {
+    margin-bottom: -140px;
     background: linear-gradient(180deg, #fff0 70%, #fff 100%), url(../../images/bg1.png);
 }
 
@@ -9,7 +10,8 @@
         padding: 0 1.5em;
     }
     @include mq(desktop) {
-        top: -125px;
+        padding: 0;
+        top: -140px;
     }
     background: #f6f6f6;
     box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.118);
@@ -29,7 +31,7 @@
         @include font-size(17px, 24px);
     }
     @include mq(desktop) {
-        padding: 3.87em 4.93em;
+        padding: 3.7em 2.88em;
         &:nth-child(even) {
             padding-top: 0;
             padding-bottom: 0;
