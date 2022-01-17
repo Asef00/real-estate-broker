@@ -36,6 +36,7 @@
             border: 1px solid #dbdbdb;
             border-top: 0;
             border-bottom: 0;
+            margin: 3.87em 0;
         }
     }
 }
@@ -47,12 +48,14 @@
 }
 
 .c-presentation__icon {
-    width: 50px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 2.25em;
+    @include mq(tablet) {
+    
+        width: 2.25em;
+    }
 }
 .c-presentation__icon img{
-    height: 2.25em;
 }

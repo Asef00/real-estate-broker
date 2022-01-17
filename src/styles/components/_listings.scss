@@ -20,9 +20,20 @@
 .c-card {
     font-family: Lato;
     width: 100%;
-    max-width: 330px;
+    // max-width: 20.625em;
     margin: 0 auto 2.5em;
     box-shadow: 0px 2px 6px 0px #00000026;
+    // @include mq(tablet) {
+    //     max-width: 21.25em;
+    // }
+    // @include mq(tablet) {
+    //     max-width: 23.5em;
+    // }
+}
+
+.c-card img {
+    width: 100%;
+    height: auto;
 }
 
 .c-card__content {
@@ -65,7 +76,7 @@
     right: 0;
     border: 1px solid #c4c4c4;
     background-color: #fff;
-    padding: 3px 15px;
+    padding: 0.25em 1.25em;
     margin: 2.16em 2em;
 
     font-family: $lato;

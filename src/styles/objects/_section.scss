@@ -11,7 +11,6 @@
 
 .o-section__wrapper--full {
     @include mq($until: lg) {
-        padding: 0;
         width: 100%;
         max-width: unset;
     }

@@ -9,13 +9,13 @@
     gap: 3em;
     padding: 0;
     margin-bottom: 5em;
-    max-width: 460px;
+    max-width: 28.75em;
     @include mq(desktop) {
         max-width: none;
     }
 
     .row {
-        gap: 20px 0;
+        gap: 1.25em 0;
     }
 }
 
@@ -54,8 +54,8 @@
 .c-scroll-up {
     cursor: pointer;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
+    width: 1.78em;
+    height: 1.78em;
     display: flex;
     align-items: center;
     justify-content: center;
