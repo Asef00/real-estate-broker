@@ -46,6 +46,7 @@
     new Flickity('.c-story__carousel', {
       prevNextButtons: false,
       wrapAround: true,
+      watchCSS: true,
       groupCells: true,
       pageDots: false,
       // setGallerySize: false,

@@ -3,11 +3,31 @@
     background-size: cover;
     padding-bottom: 1.25em;
     @include mq(tablet) {
-        padding-bottom: 3.875em;
+        padding-bottom: 7.37em;
+    }
+    @include mq(desktop) {
+        padding-bottom: 2.5em;
+    }
+}
+
+.c-story__carousel {
+    &::after {
+        content: "flickity";
+        display: none; /* hide :after */
+        @include mq($from: tablet, $until: desktop) {
+            content: "";
+        }
+    }
+
+    @include mq($from: tablet, $until: desktop) {
+        display: flex;
+        flex-direction: column;
+        gap: 4.37em;
     }
 }
 
 .c-story__item {
+    position: relative;
     max-width: 36.18em;
     margin: auto;
     margin-bottom: 1.37em;
@@ -17,6 +37,11 @@
     @include mq(tablet) {
         // max-width: 36.5em;
         padding: 2.5em;
+        margin-bottom: 0;
+    }
+    @include mq(desktop) {
+        width: 50%;
+        margin: 0 15px 1.37em;
     }
 }
 
