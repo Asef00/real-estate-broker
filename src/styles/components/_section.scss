@@ -6,23 +6,29 @@
     text-align: center;
     padding: 0 1em;
 }
+
 .c-section-title__h {
-    margin: 3.07em 0 1.23em;
+    margin: 3.07em 0 1.84em;
     font-weight: normal;
     font-family: $playfair;
     @include font-size(26px,34px);
+    
     @include mq(tablet) {
         @include font-size(28px,35px);
         margin-top: 3.42em;
+        margin-bottom: 1.71em;
     }
     @include mq(desktop) {
         @include font-size(32px,43px);
         margin-top: 3.75em;
     }
-}
-.c-section-title__hr {
-    width: 4.87em;
-    margin-bottom: 3em;
-    display: inline-block;
-    border-top: 2px solid #e4e4e4;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 78px;
+        background: #C7C7C7;
+        height: 2px;
+        margin: 32px auto 0;
+    }
 }
