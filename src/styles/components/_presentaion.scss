@@ -62,9 +62,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2.25em;
-    @include mq(tablet) {
+    flex-shrink: 0;
+    img {
         width: 2.25em;
+        height: auto;
+        @include mq(tablet) {
+            width: 2.6em;
+        }
+        @include mq(desktop) {
+            width: unset;
+        }
     }
 }
 .c-presentation__icon img {
