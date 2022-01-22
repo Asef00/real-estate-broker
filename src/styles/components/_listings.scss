@@ -9,11 +9,18 @@
     }
 }
 
-.c-listing__carousel:after {
-    content: "flickity";
-    display: none; /* hide :after */
-    @include mq(tablet) {
-        content: "";
+.c-listing__carousel {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    &:after {
+        content: "flickity";
+        display: none; /* hide :after */
+        @include mq(tablet) {
+            content: "";
+        }
     }
 }
 
@@ -66,7 +73,7 @@
     gap: 0 0.51em;
 }
 .c-card-option__qty {
-    @include font-size(14px,16.8px);
+    @include font-size(14px, 16.8px);
 }
 
 .c-card__btn {
@@ -80,6 +87,6 @@
     margin: 2.16em 2em;
 
     font-family: $lato;
-    @include font-size(12px,14px);
+    @include font-size(12px, 14px);
     letter-spacing: 0.06em;
 }
