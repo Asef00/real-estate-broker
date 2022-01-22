@@ -1851,6 +1851,22 @@ body {
   }
 }
 
+.o-section {
+  padding-top: 5em;
+}
+
+@media (min-width: 46.25em) {
+  .o-section {
+    padding-top: 6em;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .o-section {
+    padding-top: 7.5em;
+  }
+}
+
 .o-section__wrapper {
   padding: 0 1em;
   margin: 0 auto;
@@ -2004,45 +2020,53 @@ body {
 }
 
 .c-section--hero {
-  background-image: url("../../images/Rectangle.png");
+  background-image: url("../../images/hero-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.c-hero {
-  text-align: center;
-  color: white;
-  padding: 0 0 6.62em;
+  padding-top: 4.98em;
+  padding-bottom: 6.62em;
 }
 
 @media (min-width: 46.25em) {
-  .c-hero {
+  .c-section--hero {
+    padding-top: 6.37em;
     padding-bottom: 7.93em;
   }
 }
 
 @media (min-width: 61.25em) {
-  .c-hero {
+  .c-section--hero {
+    padding-top: 7.5em;
     padding-bottom: 17.5em;
+  }
+}
+
+.c-hero {
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 61.25em) {
+  .c-hero {
     max-width: 46.87em;
     margin: auto;
   }
 }
 
 .c-hero__logo {
-  padding: 4.98em 0 5.54em;
+  padding-bottom: 5.54em;
 }
 
 @media (min-width: 46.25em) {
   .c-hero__logo {
-    padding: 6.37em 0 4.93em;
+    padding-bottom: 4.93em;
   }
 }
 
 @media (min-width: 61.25em) {
   .c-hero__logo {
-    padding: 7.5em 0 5.5em;
+    padding-bottom: 5.5em;
   }
 }
 
@@ -2472,7 +2496,8 @@ body {
 }
 
 .c-section__title {
-  margin: 3.07em 0 1.84em;
+  margin-bottom: 1.84em;
+  margin-top: 0;
   font-weight: normal;
   font-family: "Playfair Display", serif;
   font-size: 26px;
@@ -2485,7 +2510,6 @@ body {
     font-size: 28px;
     font-size: 1.75rem;
     line-height: 35px;
-    margin-top: 3.42em;
     margin-bottom: 1.71em;
   }
 }
@@ -2495,7 +2519,6 @@ body {
     font-size: 32px;
     font-size: 2rem;
     line-height: 43px;
-    margin-top: 3.75em;
   }
 }
 

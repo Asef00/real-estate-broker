@@ -1,3 +1,13 @@
+.o-section {
+    padding-top: 5em;
+    @include mq(tablet) {
+        padding-top: 6em;
+    }
+    @include mq(desktop) {
+        padding-top: 7.5em;
+    }
+}
+
 .o-section__wrapper {
     padding: 0 1em;
     margin: 0 auto;

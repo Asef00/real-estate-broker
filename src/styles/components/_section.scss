@@ -8,19 +8,18 @@
 }
 
 .c-section__title {
-    margin: 3.07em 0 1.84em;
+    margin-bottom: 1.84em;
+    margin-top: 0;
     font-weight: normal;
     font-family: $playfair;
     @include font-size(26px,34px);
     
     @include mq(tablet) {
         @include font-size(28px,35px);
-        margin-top: 3.42em;
         margin-bottom: 1.71em;
     }
     @include mq(desktop) {
         @include font-size(32px,43px);
-        margin-top: 3.75em;
     }
 
     &::after {
