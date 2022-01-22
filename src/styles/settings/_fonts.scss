@@ -3,14 +3,16 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+    src: url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
+        url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2");
 }
 @font-face {
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+    src: url("../fonts/PlayfairDisplay-Bold.woff") format("woff"),
+        url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2");
 }
 @font-face {
     font-family: "Playfair Display";
@@ -20,30 +22,29 @@
     src: url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
 }
 
-
 @font-face {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+    src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
 }
 @font-face {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato";
     font-style: italic;
     font-weight: 400;
     font-display: swap;
     src: url("../fonts/Lato-Italic.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+    src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
 }
 @font-face {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato";
     font-style: italic;
     font-weight: 700;
     font-display: swap;
