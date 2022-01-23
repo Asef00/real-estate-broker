@@ -2500,24 +2500,49 @@ body {
 
 .c-modal__overlay {
   background-color: rgba(43, 46, 56, 0.9);
-  /* 1 */
+  -webkit-animation: fade-in 200ms both;
+          animation: fade-in 200ms both;
 }
 
 .c-modal__content {
   margin: auto;
-  /* 1 */
   padding: 1.87em;
   width: 21.87em;
   z-index: 2;
-  /* 2 */
   position: relative;
-  /* 2 */
   background-color: white;
-  /* 3 */
+  -webkit-animation: fade-in 400ms 200ms both, slide-up 400ms 200ms both;
+          animation: fade-in 400ms 200ms both, slide-up 400ms 200ms both;
 }
 
 .c-modal__title {
   margin-bottom: 0;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  from {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
 }
 
 .c-section {

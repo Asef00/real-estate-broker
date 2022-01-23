@@ -7,7 +7,16 @@
 
     // init modal
     var success_modal = document.getElementById('success-modal')
-    if (success_modal) { var dialog = new A11yDialog(success_modal); }
+    if (success_modal) {
+      var dialog = new A11yDialog(success_modal);
+      dialog.on('show', function (element, event) {
+        document.documentElement.style.overflow = 'hidden';
+      })
+      
+      dialog.on('hide', function (element, event) {
+        document.documentElement.style.overflow = 'visible';
+      })
+    }
 
 
     // Event handling
