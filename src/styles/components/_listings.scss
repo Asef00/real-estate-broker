@@ -1,17 +1,36 @@
 .c-section--listing {
     margin-bottom: 7em;
 
-    .c-section-title__hr {
-        display: none;
-        @include mq(tablet) {
-            display: block;
+    .c-section__title {
+        margin-bottom: 1.53em;
+        &:after {
+            display: none;
+            @include mq(tablet) {
+                display: block;
+            }
         }
     }
 }
 
+.c-listing {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mq(sm) {
+        max-width: 540px;
+    }
+    @include mq(md) {
+        max-width: 720px;
+    }
+    @include mq(lg) {
+        max-width: 1200px;
+    }
+}
+
 .c-listing__carousel {
-    display: flex;
-    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 
@@ -22,7 +41,26 @@
             content: "";
         }
     }
+
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
+
+// .c-listing__item {
+//     // adding p-bottom to show img box-shadow
+//     padding: 0 0.9375em 2em;
+
+//     @include mq(tablet) {
+//         width: 50%;
+//         padding: 0 1.25em 2.5em;
+//     }
+//     @include mq(desktop) {
+//         width: 33%;
+//         padding-bottom: 3.125em;
+//     }
+// }
 
 .c-card {
     font-family: Lato;
