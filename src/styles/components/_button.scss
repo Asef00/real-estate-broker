@@ -7,10 +7,10 @@
     cursor: pointer;
     transition: .2s;
     
-    letter-spacing: 0.12em;
-    font-weight: 900;
+    letter-spacing: .12em;
+    font-weight: 700;
     font-family: $lato;
-    @include font-size(15px, 18px);
+    @include font-size(14px, 17px);
     @include mq(desktop) {
         padding: .87em 2.56em;
     }
