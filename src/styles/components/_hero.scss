@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 4.98em;
-    padding-bottom: 6.62em;
+    padding-bottom: 2.8125em;
 
     @include mq(tablet) {
         padding-top: 6.37em;
@@ -66,13 +66,9 @@
     }
 }
 
-.c-scroll-bottom {
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    bottom: 2.3em;
+.c-hero__scroll {
+    display: block;
+    margin: 45px auto 0;
 
     @include mq(tablet) {
         display: none;

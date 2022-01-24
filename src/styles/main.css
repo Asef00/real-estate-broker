@@ -2031,7 +2031,7 @@ input:focus {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 4.98em;
-  padding-bottom: 6.62em;
+  padding-bottom: 2.8125em;
 }
 
 @media (min-width: 46.25em) {
@@ -2128,21 +2128,13 @@ input:focus {
   }
 }
 
-.c-scroll-bottom {
-  position: absolute;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  left: 0;
-  bottom: 2.3em;
+.c-hero__scroll {
+  display: block;
+  margin: 45px auto 0;
 }
 
 @media (min-width: 46.25em) {
-  .c-scroll-bottom {
+  .c-hero__scroll {
     display: none;
   }
 }
@@ -2784,7 +2776,7 @@ input:focus {
   }
 }
 
-.c-scroll-up {
+.c-footer__scroll {
   cursor: pointer;
   border-radius: 100%;
   width: 1.78em;
@@ -2800,7 +2792,7 @@ input:focus {
           justify-content: center;
 }
 
-.c-scroll-up:hover {
+.c-footer__scroll:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: #ddd;
