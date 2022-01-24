@@ -89,10 +89,10 @@
 }
 
 .c-card__bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: .625em 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: .625em .5em;
 }
 
 .c-card__options {
@@ -121,6 +121,7 @@
     background-color: #fff;
     padding: 0.25em 1.25em;
     margin-left: auto;
+    margin-top: auto;
     cursor: pointer;
     transition: .2s;
 

@@ -2383,15 +2383,14 @@ input:focus {
 }
 
 .c-card__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: .625em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .625em .5em;
 }
 
 .c-card__options {
@@ -2431,6 +2430,7 @@ input:focus {
   background-color: #fff;
   padding: 0.25em 1.25em;
   margin-left: auto;
+  margin-top: auto;
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
