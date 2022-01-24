@@ -2853,6 +2853,17 @@ input:focus {
   background-color: #ddd;
 }
 
+.c-error {
+  color: #db0000;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 16px;
+}
+
+.c-invalid input {
+  border-color: #db0000;
+}
+
 .u-flex {
   display: -webkit-box;
   display: -ms-flexbox;

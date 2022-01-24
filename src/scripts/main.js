@@ -22,26 +22,58 @@
     // Event handling
     var form = document.querySelector('.c-footer__form');
     if (form) {
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        var FD = new FormData(form);
-        var error = false;
+      form.addEventListener('submit', e => {
+        e.preventDefault();
 
-        const validateEmail = (email) => {
-          return String(email)
-            .toLowerCase()
-            .match(
-              /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-            );
+        var FD = new FormData(form);
+        const name = FD.get('name').trim();
+        const email = FD.get('email').trim();
+        let validName = false;
+        let validEmail = false;
+
+        const isValidEmail = email => {
+          const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(String(email).toLowerCase());
+        }
+
+        const setError = (element, message) => {
+          // console.log(element,message);
+          const inputControl = element.parentElement;
+          const errorDisplay = inputControl.querySelector('.c-error');
+
+          errorDisplay.innerText = message;
+          inputControl.classList.add('c-invalid');
+        }
+
+        const setSuccess = element => {
+          const inputControl = element.parentElement;
+          const errorDisplay = inputControl.querySelector('.c-error');
+
+          errorDisplay.innerText = '';
+          inputControl.classList.remove('c-invalid');
         };
 
-        // Name Field
-        if (!FD.get('name') || !FD.get('email') || !validateEmail) {
-          error = true;
+        if (name === '') {
+          validName = false;
+          setError(form.name, 'Please enter your name');
+        } else {
+          validName = true;
+          setSuccess(form.name);
+        }
+
+        if (email === '') {
+          validEmail = false;
+          setError(form.email, 'Please enter email address');
+        } else if (!isValidEmail(email)) {
+          validEmail = false;
+          setError(form.email, 'Provide a valid email address');
+        } else {
+          validEmail = true;
+          setSuccess(form.email);
         }
 
         // Everything is fine
-        if (!error) {
+        if (validEmail && validName) {
           // Show the dialog
           dialog.show();
         }
@@ -49,10 +81,14 @@
     }
 
 
+
+
     // Scroll behaviour
     new SmoothScroll('a[href*="#"]', {
       speed: 300
     });
+
+
 
 
     // Flickity init

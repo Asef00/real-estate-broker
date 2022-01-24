@@ -76,3 +76,12 @@
         background-color: #ddd;
     }
 }
+
+.c-error {
+    color: #db0000;
+    @include font-size(14px, 16px);
+}
+
+.c-invalid input {
+    border-color: #db0000;
+}
