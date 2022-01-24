@@ -2330,6 +2330,17 @@ input:focus {
   width: 100%;
   -webkit-box-shadow: 0px 2px 6px 0px #00000026;
           box-shadow: 0px 2px 6px 0px #00000026;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .c-card img {
@@ -2339,6 +2350,19 @@ input:focus {
 
 .c-card__content {
   padding: 1.9em 1.5em 1.6em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .c-card__title {
@@ -2407,10 +2431,17 @@ input:focus {
   background-color: #fff;
   padding: 0.25em 1.25em;
   margin-left: auto;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 14px;
   letter-spacing: 0.06em;
+}
+
+.c-card__btn:hover {
+  border-color: #000;
 }
 
 .c-section--cta {
