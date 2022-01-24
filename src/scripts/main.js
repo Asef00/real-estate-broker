@@ -70,7 +70,7 @@
         prevNextButtons: false,
         wrapAround: true,
         watchCSS: true,
-        groupCells: true,
+        // groupCells: true,
         pageDots: false,
         // setGallerySize: false,
         autoPlay: true
@@ -85,6 +85,7 @@
         // cellAlign: 'left',
         contain: true,
         imagesLoaded: true,
+        prevNextButtons: false,
         autoPlay: true
       });
     }

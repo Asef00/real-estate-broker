@@ -11,37 +11,42 @@
 }
 
 .c-story__carousel {
+    
     &::after {
         content: "flickity";
         display: none; /* hide :after */
-        @include mq($from: tablet, $until: desktop) {
+        @include mq(tablet) {
             content: "";
         }
     }
-
-    @include mq($from: tablet, $until: desktop) {
+    
+    @include mq(tablet) {
         display: flex;
+    }
+    @include mq($from: tablet, $until: desktop) {
         flex-direction: column;
         gap: 4.37em;
     }
 }
 
 .c-story__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     max-width: 36.18em;
-    margin: auto;
-    margin-bottom: 1.37em;
+    width: 100%;
+    margin: 0 .625em 1.37em;
     padding: 2em;
     background-color: #fff;
     box-shadow: 3px 3px 11px 0px #00000014;
     @include mq(tablet) {
-        // max-width: 36.5em;
         padding: 2.5em;
-        margin-bottom: 0;
+        margin: 0 auto;
     }
     @include mq(desktop) {
         width: 50%;
-        margin: 0 15px 1.37em;
+        margin: 0 .9375em 1.37em;
     }
 }
 

@@ -1,5 +1,9 @@
-.row.flickity-enabled {
-    display: block;
+.flickity-enabled {
+    // padding-left: 45px;
+    // padding-right: 45px;
+    &.row {
+        display: block;
+    }
 }
 
 // .flickity-viewport {
@@ -32,10 +36,10 @@
     }
 
     &.previous {
-        left: -45px;
+        // left: -45px;
     }
     &.next {
-        right: -45px;
+        // right: -45px;
     }
 
     .flickity-button-icon {
