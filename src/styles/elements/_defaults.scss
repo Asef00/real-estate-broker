@@ -12,3 +12,13 @@ body {
 .main {
   background-color: #fff;
 }
+
+input {
+  border: 1px solid #cecccc;
+  padding: 0.6em;
+
+  &:focus {
+    outline: none;
+    border-color: #999;
+  }
+}

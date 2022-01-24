@@ -2,7 +2,10 @@
     margin-bottom: 7em;
 
     .c-section__title {
-        margin-bottom: 1.53em;
+        
+        @include mq($until: tablet) {
+            margin-bottom: 1.53em;
+        }
         &:after {
             display: none;
             @include mq(tablet) {
@@ -14,25 +17,11 @@
 
 .c-listing {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-
-    @include mq(sm) {
-        max-width: 540px;
-    }
-    @include mq(md) {
-        max-width: 720px;
-    }
-    @include mq(lg) {
-        max-width: 1200px;
-    }
 }
 
 .c-listing__carousel {
-    margin-right: -15px;
-    margin-left: -15px;
 
     &:after {
         content: "flickity";
@@ -48,32 +37,23 @@
     }
 }
 
-// .c-listing__item {
-//     // adding p-bottom to show img box-shadow
-//     padding: 0 0.9375em 2em;
-
-//     @include mq(tablet) {
-//         width: 50%;
-//         padding: 0 1.25em 2.5em;
-//     }
-//     @include mq(desktop) {
-//         width: 33%;
-//         padding-bottom: 3.125em;
-//     }
-// }
+.c-listing__item {
+    padding: 5px;
+    margin: .625em;
+    
+    @include mq(tablet) {
+        padding: 0 .625em 1.25em;
+        margin: 0;
+    }
+    @include mq(desktop) {
+        padding: 0 1.25em 2.5em;
+    }
+}
 
 .c-card {
-    font-family: Lato;
+    height: 100%;
     width: 100%;
-    // max-width: 20.625em;
-    margin: 0 auto 2.5em;
     box-shadow: 0px 2px 6px 0px #00000026;
-    // @include mq(tablet) {
-    //     max-width: 21.25em;
-    // }
-    // @include mq(tablet) {
-    //     max-width: 23.5em;
-    // }
 }
 
 .c-card img {
@@ -82,11 +62,11 @@
 }
 
 .c-card__content {
-    position: relative;
     padding: 1.9em 1.5em 1.6em;
 }
 
 .c-card__title {
+    font-weight: 700;
     @include font-size(18px, 22px);
 }
 
@@ -94,37 +74,44 @@
     margin-top: 0.5em;
     margin-bottom: 1.5em;
     color: #696969;
+    letter-spacing: 0.04em;
     @include font-size(16px, 19px);
 }
 
-.c-card__options {
+.c-card__bottom {
     display: flex;
-    gap: 0 1.5em;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .625em 0;
 }
 
-.c-card__option {
+.c-card__options {
+    padding: 0;
+    margin: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 0 0.51em;
+    gap: .625em 1.56em;
+    list-style: none;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 0 .625em;
+    }
 }
+
 .c-card-option__qty {
     @include font-size(14px, 16.8px);
 }
 
 .c-card__btn {
     text-transform: uppercase;
-    position: absolute;
-    bottom: 0;
-    right: 0;
     border: 1px solid #c4c4c4;
     background-color: #fff;
     padding: 0.25em 1.25em;
-    margin: 2.16em 2em;
+    margin-left: auto;
 
-    font-family: $lato;
     @include font-size(12px, 14px);
     letter-spacing: 0.06em;
 }

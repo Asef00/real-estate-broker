@@ -17,6 +17,8 @@
     display: none;
     background: #ececec;
     transition: 0.2s;
+    width: 2.81em;
+    height: 2.81em;
 
     @include mq(desktop) {
         display: block;
@@ -36,8 +38,10 @@
         right: -45px;
     }
 
-    svg {
-        width: 24px !important;
+    .flickity-button-icon {
+        vertical-align: middle;
+        width: 1.5em;
+        position: unset;
     }
 }
 
