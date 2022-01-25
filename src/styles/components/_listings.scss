@@ -1,10 +1,19 @@
 .c-section--listing {
-    margin-bottom: 7em;
+    margin-bottom: 6em;
+
+    @include mq($from: tablet, $until: desktop) {
+        padding-top: 5.375em;
+    }
+    @include mq(tablet) {
+        margin-bottom: 4.75em;
+    }
+    @include mq(desktop) {
+        margin-bottom: 5em;
+    }
 
     .c-section__title {
-        
         @include mq($until: tablet) {
-            margin-bottom: 1.53em;
+            margin-bottom: 0.96em;
         }
         &:after {
             display: none;
@@ -22,7 +31,6 @@
 }
 
 .c-listing__carousel {
-
     &:after {
         content: "flickity";
         display: none; /* hide :after */
@@ -38,11 +46,12 @@
 }
 
 .c-listing__item {
-    padding: 5px;
-    margin: .625em;
-    
+    padding: 1px; // to let box-shadow show up
+    margin: 0.625em;
+    margin-bottom: 2.5em;
+
     @include mq(tablet) {
-        padding: 0 .625em 1.25em;
+        padding: 0 0.625em 1.25em;
         margin: 0;
     }
     @include mq(desktop) {
@@ -67,7 +76,7 @@
 }
 
 .c-card__content {
-    padding: 1.9em 1.5em 1.6em;
+    padding: 1.93em 1.5em 1.62em;
 
     flex: 1;
     display: flex;
@@ -82,7 +91,7 @@
 
 .c-card__price {
     margin-top: 0.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.32em;
     color: #696969;
     letter-spacing: 0.04em;
     @include font-size(16px, 19px);
@@ -92,7 +101,7 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    gap: .625em .5em;
+    gap: 0.625em 0.5em;
 }
 
 .c-card__options {
@@ -101,13 +110,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: .625em 1.56em;
+    gap: 1.5em 1.56em;
     list-style: none;
 
     li {
         display: flex;
         align-items: center;
-        gap: 0 .625em;
+        gap: 0 0.5em;
     }
 }
 
@@ -116,14 +125,16 @@
 }
 
 .c-card__btn {
+    width: 7em;
+    height: 2.08em;
     text-transform: uppercase;
     border: 1px solid #c4c4c4;
     background-color: #fff;
-    padding: 0.25em 1.25em;
+    padding: 0;
     margin-left: auto;
     margin-top: auto;
     cursor: pointer;
-    transition: .2s;
+    transition: 0.2s;
 
     @include font-size(12px, 14px);
     letter-spacing: 0.06em;

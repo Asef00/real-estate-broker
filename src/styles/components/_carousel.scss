@@ -18,14 +18,14 @@
 
 .flickity-prev-next-button {
     opacity: 0.5;
-    display: none;
     background: #ececec;
     transition: 0.2s;
     width: 2.81em;
     height: 2.81em;
+    transform: translateY(calc(-50% - 1.25em));
 
-    @include mq(desktop) {
-        display: block;
+    @include mq($until: wide) {
+        display: none;
     }
 
     &:hover {
@@ -36,10 +36,10 @@
     }
 
     &.previous {
-        // left: -45px;
+        left: -37px;
     }
     &.next {
-        // right: -45px;
+        right: -37px;
     }
 
     .flickity-button-icon {
@@ -51,6 +51,9 @@
 
 .flickity-page-dots {
     bottom: unset;
+    display: flex; // to remove additional height
+    justify-content: center;
+
     .dot {
         background: #dfdddd;
         opacity: 1;
