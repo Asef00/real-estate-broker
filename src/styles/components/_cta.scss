@@ -5,9 +5,23 @@
         padding-top: 4.875em;
     }
     .o-section__wrapper {
+        padding: 0;
+
         @include mq($until: lg) {
             width: 100%;
             max-width: unset;
+        }
+
+        .c-section {
+            padding: 0 1em;
+        }
+    }
+
+    .c-btn {
+        padding: 0 2.7em;
+
+        @include mq(desktop) {
+            padding: 0 3.03em;
         }
     }
 }
@@ -19,6 +33,7 @@
 .c-cta__desc {
     max-width: 32.11em;
     margin: 0 auto 2.22em;
+    padding: 0 1em;
     color: #767676;
     @include font-size(18px, 26px);
 }

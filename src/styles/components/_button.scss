@@ -1,18 +1,21 @@
 .c-btn {
-    text-transform: uppercase;
-    padding: .8em 2.2em;
+    height: 3em;
+    padding: 0 3.16em;
     background: #e1bf6d;
     box-shadow: 1px 2px 4px 0px #00000045;
     border: 0;
     cursor: pointer;
     transition: .2s;
     
+    text-transform: uppercase;
     letter-spacing: .12em;
     font-weight: 700;
     font-family: $lato;
     @include font-size(14px, 17px);
+
     @include mq(desktop) {
-        padding: .87em 2.56em;
+        height: 3.14em;
+        padding: 0 3.39em;
     }
     
     &:hover {

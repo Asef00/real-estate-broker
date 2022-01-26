@@ -14,6 +14,17 @@
         padding-top: 7.5em;
         padding-bottom: 17.5em;
     }
+
+    .c-btn {
+        padding: 0 3.4em;
+        @include font-size(15px,18px);
+
+        @include mq(desktop) {
+            height: 3.0625em;
+            padding: 0 4.02em;
+            @include font-size(16px,19px);
+        }
+    }
 }
 
 .c-hero {
