@@ -10,17 +10,17 @@
     if (success_modal) {
       var dialog = new A11yDialog(success_modal);
       dialog.on('show', function (element, event) {
-        document.documentElement.style.overflow = 'hidden';
+        document.documentElement.classList.add('is-modal-opend');
       })
 
       dialog.on('hide', function (element, event) {
-        document.documentElement.style.overflow = 'visible';
+        document.documentElement.classList.remove('is-modal-opend');
       })
     }
 
 
     // Event handling
-    var form = document.querySelector('.c-footer__form');
+    var form = document.querySelector('.js-form');
     if (form) {
       form.addEventListener('submit', e => {
         e.preventDefault();
@@ -39,18 +39,18 @@
         const setError = (element, message) => {
           // console.log(element,message);
           const inputControl = element.parentElement;
-          const errorDisplay = inputControl.querySelector('.c-error');
+          const errorDisplay = inputControl.querySelector('.js-error');
 
           errorDisplay.innerText = message;
-          inputControl.classList.add('c-invalid');
+          inputControl.classList.add('is-invalid');
         }
 
         const setSuccess = element => {
           const inputControl = element.parentElement;
-          const errorDisplay = inputControl.querySelector('.c-error');
+          const errorDisplay = inputControl.querySelector('.js-error');
 
           errorDisplay.innerText = '';
-          inputControl.classList.remove('c-invalid');
+          inputControl.classList.remove('is-invalid');
         };
 
         if (name === '') {
@@ -112,23 +112,6 @@
         // autoPlay: true
       });
     }
-
-    // Flickity options, defaults
-    // var options = {
-    //   prevNextButtons: false
-    // };
-
-    // // enable prev/next buttons at 768px
-    // if (matchMedia('screen and (min-width: 768px)').matches) {
-    //   options.prevNextButtons = true;
-    // }
-
-    // // disable draggable at 1200px
-    // if (matchMedia('screen and (min-width: 1200px)').matches) {
-    //   options.draggable = false;
-    // }
-
-    // $('.gallery').flickity(options);
 
     var cta_carousel = document.querySelector('.js-cta-carousel');
     if (cta_carousel) {

@@ -36,6 +36,10 @@
   margin-bottom: 0;
 }
 
+.is-modal-opend {
+   overflow: hidden;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

@@ -78,10 +78,12 @@
 }
 
 .c-error {
+    transition: .2s;
     color: #db0000;
     @include font-size(14px, 16px);
 }
 
-.c-invalid input {
+.is-invalid input {
+    transition: .2s;
     border-color: #db0000;
 }
