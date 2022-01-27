@@ -11,22 +11,22 @@
     margin-top: 0;
     font-weight: normal;
     font-family: $playfair;
-    @include font-size(26px,34px);
-    
+    @include font-size(26px, 1.307);
+
     @include mq(tablet) {
-        @include font-size(28px,35px);
+        @include font-size(28px, 1.25);
         margin-bottom: 1.714em;
     }
     @include mq(desktop) {
-        @include font-size(32px,43px);
+        @include font-size(32px, 1.343);
         margin-bottom: 1.75em;
     }
 
     &::after {
-        content: '';
+        content: "";
         display: block;
         width: 78px;
-        background: #C7C7C7;
+        background: #c7c7c7;
         height: 2px;
         margin: 32px auto 0;
     }

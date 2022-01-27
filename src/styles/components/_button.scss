@@ -11,7 +11,7 @@
     letter-spacing: .12em;
     font-weight: 700;
     font-family: $lato;
-    @include font-size(14px, 17px);
+    @include font-size(14px, 1.214);
 
     @include mq(desktop) {
         height: 3.14em;

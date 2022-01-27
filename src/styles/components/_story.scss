@@ -53,7 +53,7 @@
 .c-story__text {
     color: #767676;
     font-style: italic;
-    @include font-size(18px, 29px);
+    @include font-size(18px, 1.611);
 }
 
 .c-story__author {
@@ -61,7 +61,7 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    @include font-size(14px, 14px);
+    @include font-size(14px, 1);
 }
 
 .c-story__icon {

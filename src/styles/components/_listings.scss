@@ -86,7 +86,7 @@
 
 .c-card__title {
     font-weight: 700;
-    @include font-size(18px, 22px);
+    @include font-size(18px, 1.222);
 }
 
 .c-card__price {
@@ -94,7 +94,7 @@
     margin-bottom: 1.32em;
     color: #696969;
     letter-spacing: 0.04em;
-    @include font-size(16px, 19px);
+    @include font-size(16px, 1.187);
 }
 
 .c-card__bottom {
@@ -121,7 +121,7 @@
 }
 
 .c-card-option__qty {
-    @include font-size(14px, 16.8px);
+    @include font-size(14px, 1.2);
 }
 
 .c-card__btn {
@@ -136,7 +136,7 @@
     cursor: pointer;
     transition: 0.2s;
 
-    @include font-size(12px, 14px);
+    @include font-size(12px, 1.166);
     letter-spacing: 0.06em;
 
     &:hover {
