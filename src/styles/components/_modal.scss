@@ -20,24 +20,42 @@
 .c-modal__overlay {
   background-color: rgba(43, 46, 56, 0.9);
   animation: fade-in 200ms both;
+
+  @include mq($until: tablet) {
+    background: #fff;
+  }
 }
 
 .c-modal__content {
   margin: auto;
   padding: 1.87em;
-  width: 21.87em;
+  width: 20.625em;
   z-index: 2;
   position: relative;
   background-color: white;
   animation: fade-in 400ms 200ms both, slide-up 400ms 200ms both;
+
+  @include mq(tablet) {
+    width: 26.93em;
+    padding: 3em 5em;
+  }
+}
+
+.c-modal__ico {
+  margin-bottom: 2.5em;
 }
 
 .c-modal__title {
-  margin-bottom: 0;
+  margin: 0 auto 0.5em;
+  @include font-size(24px, 1.775);
+}
+
+.c-modal__message {
+  margin: 0 auto 2.125em;
 }
 
 .is-modal-opend {
-   overflow: hidden;
+  overflow: hidden;
 }
 
 @keyframes fade-in {
