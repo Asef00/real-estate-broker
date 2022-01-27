@@ -16,14 +16,6 @@
 }
 
 @font-face {
-  font-family: "Playfair Display";
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -36,7 +28,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Lato-Italic.ttf") format("truetype");
+  src: url("../fonts/Lato-Italic.woff") format("woff"), url("../fonts/Lato-Italic.woff2") format("woff2");
 }
 
 @font-face {
@@ -1879,8 +1871,8 @@ input:focus {
 }
 
 .c-btn {
-  text-transform: uppercase;
-  padding: .8em 2.2em;
+  height: 3em;
+  padding: 0 3.16em;
   background: #e1bf6d;
   -webkit-box-shadow: 1px 2px 4px 0px #00000045;
           box-shadow: 1px 2px 4px 0px #00000045;
@@ -1888,17 +1880,19 @@ input:focus {
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
+  text-transform: uppercase;
   letter-spacing: .12em;
   font-weight: 700;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 17px;
+  line-height: 1.214;
 }
 
 @media (min-width: 61.25em) {
   .c-btn {
-    padding: .87em 2.56em;
+    height: 3.14em;
+    padding: 0 3.39em;
   }
 }
 
@@ -1999,7 +1993,7 @@ input:focus {
   font-style: italic;
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 29px;
+  line-height: 1.611;
 }
 
 .c-story__author {
@@ -2009,7 +2003,7 @@ input:focus {
   font-weight: bold;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 14px;
+  line-height: 1;
 }
 
 .c-story__icon {
@@ -2055,6 +2049,23 @@ input:focus {
   }
 }
 
+.c-section--hero .c-btn {
+  padding: 0 3.4em;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 61.25em) {
+  .c-section--hero .c-btn {
+    height: 3.0625em;
+    padding: 0 4.02em;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.187;
+  }
+}
+
 .c-hero {
   text-align: center;
   color: white;
@@ -2091,14 +2102,14 @@ input:focus {
   font-family: "Playfair Display", serif;
   font-size: 32px;
   font-size: 2rem;
-  line-height: 36px;
+  line-height: 1.125;
 }
 
 @media (min-width: 46.25em) {
   .c-hero__title {
     font-size: 36px;
     font-size: 2.25rem;
-    line-height: 45px;
+    line-height: 1.25;
   }
 }
 
@@ -2107,7 +2118,7 @@ input:focus {
     margin-bottom: 0.333em;
     font-size: 48px;
     font-size: 3rem;
-    line-height: 54px;
+    line-height: 1.25;
   }
 }
 
@@ -2116,7 +2127,7 @@ input:focus {
   text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 28px;
+  line-height: 1.4;
 }
 
 @media (min-width: 46.25em) {
@@ -2124,7 +2135,7 @@ input:focus {
     margin-bottom: 3.15em;
     font-size: 20px;
     font-size: 1.25rem;
-    line-height: 23px;
+    line-height: 1.15;
   }
 }
 
@@ -2133,7 +2144,7 @@ input:focus {
     margin-bottom: 2.9em;
     font-size: 22px;
     font-size: 1.375rem;
-    line-height: 25px;
+    line-height: 1.136;
   }
 }
 
@@ -2410,7 +2421,7 @@ input:focus {
   font-weight: 700;
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 22px;
+  line-height: 1.222;
 }
 
 .c-card__price {
@@ -2420,7 +2431,7 @@ input:focus {
   letter-spacing: 0.04em;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 19px;
+  line-height: 1.187;
 }
 
 .c-card__bottom {
@@ -2462,7 +2473,7 @@ input:focus {
 .c-card-option__qty {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 16.8px;
+  line-height: 1.2;
 }
 
 .c-card__btn {
@@ -2479,7 +2490,7 @@ input:focus {
   transition: 0.2s;
   font-size: 12px;
   font-size: 0.75rem;
-  line-height: 14px;
+  line-height: 1.166;
   letter-spacing: 0.06em;
 }
 
@@ -2497,10 +2508,28 @@ input:focus {
   }
 }
 
+.c-section--cta .o-section__wrapper {
+  padding: 0;
+}
+
 @media (max-width: 61.99em) {
   .c-section--cta .o-section__wrapper {
     width: 100%;
     max-width: unset;
+  }
+}
+
+.c-section--cta .o-section__wrapper .c-section {
+  padding: 0 1em;
+}
+
+.c-section--cta .c-btn {
+  padding: 0 2.7em;
+}
+
+@media (min-width: 61.25em) {
+  .c-section--cta .c-btn {
+    padding: 0 3.03em;
   }
 }
 
@@ -2511,10 +2540,11 @@ input:focus {
 .c-cta__desc {
   max-width: 32.11em;
   margin: 0 auto 2.22em;
+  padding: 0 1em;
   color: #767676;
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 26px;
+  line-height: 1.444;
 }
 
 .c-cta__carousel {
@@ -2600,10 +2630,16 @@ input:focus {
           animation: fade-in 200ms both;
 }
 
+@media (max-width: 46.24em) {
+  .c-modal__overlay {
+    background: #fff;
+  }
+}
+
 .c-modal__content {
   margin: auto;
   padding: 1.87em;
-  width: 21.87em;
+  width: 20.625em;
   z-index: 2;
   position: relative;
   background-color: white;
@@ -2611,8 +2647,30 @@ input:focus {
           animation: fade-in 400ms 200ms both, slide-up 400ms 200ms both;
 }
 
+@media (min-width: 46.25em) {
+  .c-modal__content {
+    width: 26.93em;
+    padding: 3em 5em;
+  }
+}
+
+.c-modal__ico {
+  margin-bottom: 2.5em;
+}
+
 .c-modal__title {
-  margin-bottom: 0;
+  margin: 0 auto 0.5em;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.775;
+}
+
+.c-modal__message {
+  margin: 0 auto 2.125em;
+}
+
+.is-modal-opend {
+  overflow: hidden;
 }
 
 @-webkit-keyframes fade-in {
@@ -2665,14 +2723,14 @@ input:focus {
   font-family: "Playfair Display", serif;
   font-size: 26px;
   font-size: 1.625rem;
-  line-height: 34px;
+  line-height: 1.307;
 }
 
 @media (min-width: 46.25em) {
   .c-section__title {
     font-size: 28px;
     font-size: 1.75rem;
-    line-height: 35px;
+    line-height: 1.25;
     margin-bottom: 1.714em;
   }
 }
@@ -2681,16 +2739,16 @@ input:focus {
   .c-section__title {
     font-size: 32px;
     font-size: 2rem;
-    line-height: 43px;
+    line-height: 1.343;
     margin-bottom: 1.75em;
   }
 }
 
 .c-section__title::after {
-  content: '';
+  content: "";
   display: block;
   width: 78px;
-  background: #C7C7C7;
+  background: #c7c7c7;
   height: 2px;
   margin: 32px auto 0;
 }
@@ -2785,18 +2843,14 @@ input:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3em;
-  padding: 0;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 5em;
+  margin: 0 auto 5em;
   max-width: 28.75em;
 }
 
 @media (min-width: 61.25em) {
   .c-footer__form {
+    padding: 0 0.93em;
     max-width: none;
   }
 }
@@ -2819,7 +2873,7 @@ input:focus {
 .c-footer-form__label {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 18px;
+  line-height: 1.125;
 }
 
 .c-footer-form__call {
@@ -2846,7 +2900,7 @@ input:focus {
   color: #757575;
   font-size: 12px;
   font-size: 0.75rem;
-  line-height: 14px;
+  line-height: 1.166;
 }
 
 @media (min-width: 46.25em) {
@@ -2858,7 +2912,7 @@ input:focus {
             flex-direction: row;
     font-size: 14px;
     font-size: 0.875rem;
-    line-height: 16.8px;
+    line-height: 1.2;
   }
 }
 
@@ -2891,13 +2945,17 @@ input:focus {
 }
 
 .c-error {
+  -webkit-transition: .2s;
+  transition: .2s;
   color: #db0000;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 16px;
+  line-height: 1.142;
 }
 
-.c-invalid input {
+.is-invalid input {
+  -webkit-transition: .2s;
+  transition: .2s;
   border-color: #db0000;
 }
 
