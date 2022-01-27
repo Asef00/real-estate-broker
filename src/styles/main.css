@@ -2221,7 +2221,7 @@ input:focus {
   padding: 1.25em 1.87em;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.375;
 }
 
 @media (min-width: 46.25em) {
@@ -2235,7 +2235,7 @@ input:focus {
             flex-direction: column;
     font-size: 17px;
     font-size: 1.0625rem;
-    line-height: 24px;
+    line-height: 1.411;
   }
 }
 

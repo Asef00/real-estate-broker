@@ -40,14 +40,14 @@
     display: flex;
     align-items: center;
     padding: 1.25em 1.87em;
-    @include font-size(16px, 22px);
+    @include font-size(16px, 1.375);
 
     @include mq(tablet) {
         gap: 2.05em;
         padding: 3.76em 0.58em 3.45em;
         text-align: center;
         flex-direction: column;
-        @include font-size(17px, 24px);
+        @include font-size(17px, 1.411);
     }
     @include mq(desktop) {
         padding: 4.23em 3.05em 3.64em;
