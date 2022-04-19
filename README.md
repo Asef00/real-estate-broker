@@ -5,9 +5,6 @@
 
 ----
 
-# **MarkItAsDone Landings Install and Develop Manual**
-
-
 ## **Quick Lunch**
 If you want have a quick start, you can start with the `dist` folder. just go to the `dist` folder and apply your changes to it. To apply changes to the content, simply open the `index.html` file and replace your text with the text. Also, to change the images, put your pictures in the image folder according to the size specified.
 
